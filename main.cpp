@@ -8,8 +8,8 @@ int main() {
     
     cin >> a >> b >> c;
 
-    double root1 = (-b + sqrt(b * b - 4 * a * c)) / 2 * a;
-    double root2 = (-b - sqrt(b * b - 4 * a * c)) / 2 * a;
+    double root1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
+    double root2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
 
     cout << fixed << setprecision(2);
     
