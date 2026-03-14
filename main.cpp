@@ -4,15 +4,13 @@
 using namespace std;
 
 int main() {
-    double a = 0, b = 0, c = 0;
-    
+    double a, b, c;
 
-    while (!(cin >> a)) { cin.clear(); cin.ignore(1); }
-    while (!(cin >> b)) { cin.clear(); cin.ignore(1); }
-    while (!(cin >> c)) { cin.clear(); cin.ignore(1); }
+    cin >> a >> b >> c;
 
-    double root1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
-    double root2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
+    double discriminant = (b * b) - (4.0 * a * c);
+    double root1 = (-b + sqrt(discriminant)) / (2.0 * a);
+    double root2 = (-b - sqrt(discriminant)) / (2.0 * a);
 
     cout << fixed << setprecision(2);
     
